@@ -49,7 +49,7 @@ class Song
     
   end 
   
-  def self.create_by_filename 
+  def self.create_by_filename(filename)
     
   end 
   
