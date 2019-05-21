@@ -51,7 +51,7 @@ class Song
   
   def self.create_by_filename(filename)
     song = self.new 
-    song.artist = filename.split(" - ").first
+    song.artist_name = filename.split(" - ").first
     song.name = filename.split(" - ").last.split(".").first 
     song
   end 
