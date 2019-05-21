@@ -50,7 +50,8 @@ class Song
   end 
   
   def self.create_by_filename(filename)
-    filename.split("-").
+    
+    filename.split("-").first
   end 
   
   def self.destroy_all 
