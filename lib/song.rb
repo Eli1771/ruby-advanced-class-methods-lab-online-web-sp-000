@@ -50,8 +50,10 @@ class Song
   end 
   
   def self.create_by_filename(filename)
-    
-    filename.split("-").first
+    song = self.new 
+    song.artist = filename.split("-").first
+    song.name = filename.split("-").last.split(".").first 
+    song
   end 
   
   def self.destroy_all 
